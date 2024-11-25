@@ -60,7 +60,7 @@ TDV.PlayerAPI.defineScript({ "definitions": [
        {
         "class": "HotspotPanoramaOverlayArea",
         "mapColor": "image",
-        "click": "this.startPanoramaWithCamera(this.panorama_8F9CA8FA_9FB3_51E7_41D7_7AFB5CF7C4D6, this.camera_70B79D38_62F5_1843_41D0_4C4BAA3B36CB); this.mainPlayList.set('selectedIndex', 1)"
+        "click": "this.startPanoramaWithCamera(this.panorama_8F9CA8FA_9FB3_51E7_41D7_7AFB5CF7C4D6, this.camera_76A4879E_62AD_087F_419E_ABB432819C61); this.mainPlayList.set('selectedIndex', 1)"
        },
        {
         "class": "HotspotPanoramaOverlayArea"
@@ -274,7 +274,7 @@ TDV.PlayerAPI.defineScript({ "definitions": [
           {
            "class": "HotspotPanoramaOverlayArea",
            "mapColor": "image",
-           "click": "this.startPanoramaWithCamera(this.panorama_8EE2CB91_9FB3_7024_418B_6394DB74BD76, this.camera_70BC5D2A_62F5_1847_416D_8A41B3886677); this.mainPlayList.set('selectedIndex', 0)"
+           "click": "this.startPanoramaWithCamera(this.panorama_8EE2CB91_9FB3_7024_418B_6394DB74BD76, this.camera_76DF6790_62AD_0843_41B8_502B84965A79); this.mainPlayList.set('selectedIndex', 0)"
           },
           {
            "class": "HotspotPanoramaOverlayArea"
@@ -319,7 +319,7 @@ TDV.PlayerAPI.defineScript({ "definitions": [
           {
            "class": "HotspotPanoramaOverlayArea",
            "mapColor": "image",
-           "click": "this.startPanoramaWithCamera(this.panorama_8CFB969A_9EF3_3024_41E2_EF5C0DD879D0, this.camera_7159DD06_62F5_184F_41CC_19F5BCF58CC2); this.mainPlayList.set('selectedIndex', 2)"
+           "click": "this.startPanoramaWithCamera(this.panorama_8CFB969A_9EF3_3024_41E2_EF5C0DD879D0, this.camera_76CDF784_62AD_0843_41BC_98218D2D2A8A); this.mainPlayList.set('selectedIndex', 2)"
           },
           {
            "class": "HotspotPanoramaOverlayArea"
@@ -482,7 +482,7 @@ TDV.PlayerAPI.defineScript({ "definitions": [
              {
               "class": "HotspotPanoramaOverlayArea",
               "mapColor": "image",
-              "click": "this.startPanoramaWithCamera(this.panorama_8F9CA8FA_9FB3_51E7_41D7_7AFB5CF7C4D6, this.camera_70B1FD31_62F5_1845_41D6_B1D08042E971); this.mainPlayList.set('selectedIndex', 1)"
+              "click": "this.startPanoramaWithCamera(this.panorama_8F9CA8FA_9FB3_51E7_41D7_7AFB5CF7C4D6, this.camera_76D0D797_62AD_084D_41BE_D332CC65C596); this.mainPlayList.set('selectedIndex', 1)"
              },
              {
               "class": "HotspotPanoramaOverlayArea"
@@ -643,24 +643,24 @@ TDV.PlayerAPI.defineScript({ "definitions": [
              "framerate": 29.97,
              "width": 3840,
              "posterURL": "media/media_708AC10C_62F5_0843_41BB_32213F7A7966_poster.jpg",
-             "type": "video/mp4",
+             "type": "application/x-mpegurl",
              "class": "Video360Resource",
-             "url": "media/media_708AC10C_62F5_0843_41BB_32213F7A7966.mp4",
-             "bitrate": 16035,
+             "url": "media/media_708AC10C_62F5_0843_41BB_32213F7A7966.m3u8",
+             "bitrate": 21381,
              "height": 1920
             },
             {
              "framerate": 29.97,
-             "width": 3168,
+             "width": 3840,
              "posterURL": "media/media_708AC10C_62F5_0843_41BB_32213F7A7966_poster.jpg",
              "type": "video/mp4",
              "class": "Video360Resource",
-             "url": "media/media_708AC10C_62F5_0843_41BB_32213F7A7966_ios.mp4",
-             "bitrate": 10914,
-             "height": 1584
+             "url": "media/media_708AC10C_62F5_0843_41BB_32213F7A7966.mp4",
+             "bitrate": 21381,
+             "height": 1920
             }
            ],
-           "loop": false,
+           "loop": true,
            "hfovMax": 140,
            "id": "media_708AC10C_62F5_0843_41BB_32213F7A7966",
            "pitch": 0,
@@ -865,7 +865,7 @@ TDV.PlayerAPI.defineScript({ "definitions": [
     "camera": "this.media_708AC10C_62F5_0843_41BB_32213F7A7966_camera",
     "start": "this.MainViewerPanoramaPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.mainPlayList, 3, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.mainPlayList, 3, this.media_708AC10C_62F5_0843_41BB_32213F7A7966)",
     "player": "this.MainViewerPanoramaPlayer",
-    "begin": "this.fixTogglePlayPauseButton(this.MainViewerPanoramaPlayer); this.setEndToItemIndex(this.mainPlayList, 3, 0)",
+    "begin": "this.fixTogglePlayPauseButton(this.MainViewerPanoramaPlayer)",
     "class": "Video360PlayListItem",
     "end": "this.trigger('tourEnded')",
     "media": "this.media_708AC10C_62F5_0843_41BB_32213F7A7966"
@@ -903,7 +903,7 @@ TDV.PlayerAPI.defineScript({ "definitions": [
    "pitch": 0
   },
   "class": "PanoramaCamera",
-  "id": "camera_7159DD06_62F5_184F_41CC_19F5BCF58CC2",
+  "id": "camera_76CDF784_62AD_0843_41BC_98218D2D2A8A",
   "automaticZoomSpeed": 10
  },
  {
@@ -937,7 +937,7 @@ TDV.PlayerAPI.defineScript({ "definitions": [
    "pitch": 0
   },
   "class": "PanoramaCamera",
-  "id": "camera_70BC5D2A_62F5_1847_416D_8A41B3886677",
+  "id": "camera_76DF6790_62AD_0843_41B8_502B84965A79",
   "automaticZoomSpeed": 10
  },
  {
@@ -971,7 +971,7 @@ TDV.PlayerAPI.defineScript({ "definitions": [
    "pitch": 0
   },
   "class": "PanoramaCamera",
-  "id": "camera_70B1FD31_62F5_1845_41D6_B1D08042E971",
+  "id": "camera_76D0D797_62AD_084D_41BE_D332CC65C596",
   "automaticZoomSpeed": 10
  },
  {
@@ -1005,7 +1005,7 @@ TDV.PlayerAPI.defineScript({ "definitions": [
    "pitch": 0
   },
   "class": "PanoramaCamera",
-  "id": "camera_70B79D38_62F5_1843_41D0_4C4BAA3B36CB",
+  "id": "camera_76A4879E_62AD_087F_419E_ABB432819C61",
   "automaticZoomSpeed": 10
  }
 ], "children": [
@@ -1156,13 +1156,13 @@ TDV.PlayerAPI.defineScript({ "definitions": [
   "setEndToItemIndex": function(playList, fromIndex, toIndex){  var endFunction = function(){ if(playList.get('selectedIndex') == fromIndex) playList.set('selectedIndex', toIndex); }; this.executeFunctionWhenChange(playList, fromIndex, endFunction); },
   "getCurrentPlayerWithMedia": function(media){  var playerClass = undefined; var mediaPropertyName = undefined; switch(media.get('class')) { case 'Panorama': case 'LivePanorama': case 'HDRPanorama': playerClass = 'PanoramaPlayer'; mediaPropertyName = 'panorama'; break; case 'Video360': playerClass = 'PanoramaPlayer'; mediaPropertyName = 'video'; break; case 'PhotoAlbum': playerClass = 'PhotoAlbumPlayer'; mediaPropertyName = 'photoAlbum'; break; case 'Map': playerClass = 'MapPlayer'; mediaPropertyName = 'map'; break; case 'Video': playerClass = 'VideoPlayer'; mediaPropertyName = 'video'; break; }; if(playerClass != undefined) { var players = this.getByClassName(playerClass); for(var i = 0; i<players.length; ++i){ var player = players[i]; if(player.get(mediaPropertyName) == media) { return player; } } } else { return undefined; } },
   "visibleComponentsIfPlayerFlagEnabled": function(components, playerFlag){  var enabled = this.get(playerFlag); for(var i in components){ components[i].set('visible', enabled); } },
-  "fixTogglePlayPauseButton": function(player){  var state = player.get('state'); var button = player.get('buttonPlayPause'); if(typeof button !== 'undefined' && player.get('state') == 'playing'){ button.set('pressed', true); } },
+  "openLink": function(url, name){  if(url == location.href) { return; } if (name == '_blank' && window && window.process && window.process.versions && window.process.versions['electron']){ if (url.startsWith('/')) { var r = window.location.href.split('/'); r.pop(); url = r.join('/') + url; } var extension = url.split('.').pop().toLowerCase(); if(extension != 'pdf' || url.startsWith('file://')) { var shell = require('electron').shell; shell.openExternal(url); } else { window.open(url, name); } } else { var newWindow = window.open(url, name); newWindow.focus(); } },
   "getComponentByName": function(name){  var list = this.getByClassName('UIComponent'); for(var i = 0, count = list.length; i<count; ++i){ var component = list[i]; var data = component.get('data'); if(data != undefined && data.name == name){ return component; } } return undefined; },
   "setMainMediaByIndex": function(index){  if(index >= 0 && index < this.mainPlayList.get('items').length){ this.mainPlayList.set('selectedIndex', index); } },
   "getGlobalAudio": function(audio){  var audios = window.currentGlobalAudios; if(audios != undefined && audio.get('id') in audios){ audio = audios[audio.get('id')]; } return audio; },
   "registerKey": function(key, value){  window[key] = value; },
   "setMainMediaByName": function(name){  var items = this.mainPlayList.get('items'); for(var i = 0; i<items.length; ++i){ if(items[i].get('media').get('label') == name) { this.mainPlayList.set('selectedIndex', i); return; } } },
-  "getCurrentPlayers": function(){  var players = this.getByClassName('PanoramaPlayer'); players = players.concat(this.getByClassName('VideoPlayer')); players = players.concat(this.getByClassName('Video360Player')); players = players.concat(this.getByClassName('PhotoAlbumPlayer')); return players; },
+  "fixTogglePlayPauseButton": function(player){  var state = player.get('state'); var button = player.get('buttonPlayPause'); if(typeof button !== 'undefined' && player.get('state') == 'playing'){ button.set('pressed', true); } },
   "getMediaByName": function(name){  var list = this.getByClassName('Media'); for(var i = 0, count = list.length; i<count; ++i){ var media = list[i]; if((media.get('class') == 'Audio' && media.get('data').label == name) || media.get('label') == name){ return media; } } return undefined; },
   "unregisterKey": function(key){  delete window[key]; },
   "setMediaBehaviour": function(playList, index, mediaDispatcher){  var self = this; var stateChangeFunction = function(event){ if(event.data.state == 'stopped'){ dispose(true); } }; var changeFunction = function(){ var index = playListDispatcher.get('selectedIndex'); if(index != -1){ indexDispatcher = index; dispose(false); } }; var disposeCallback = function(){ dispose(false); }; var dispose = function(forceDispose){ if(!playListDispatcher) return; var media = item.get('media'); if((media.get('class') == 'Video360' || media.get('class') == 'Video') && media.get('loop') == true && !forceDispose) return; playList.set('selectedIndex', -1); if(panoramaSequence && panoramaSequenceIndex != -1){ if(panoramaSequence) { if(panoramaSequenceIndex > 0 && panoramaSequence.get('movements')[panoramaSequenceIndex-1].get('class') == 'TargetPanoramaCameraMovement'){ var initialPosition = camera.get('initialPosition'); var oldYaw = initialPosition.get('yaw'); var oldPitch = initialPosition.get('pitch'); var oldHfov = initialPosition.get('hfov'); var previousMovement = panoramaSequence.get('movements')[panoramaSequenceIndex-1]; initialPosition.set('yaw', previousMovement.get('targetYaw')); initialPosition.set('pitch', previousMovement.get('targetPitch')); initialPosition.set('hfov', previousMovement.get('targetHfov')); var restoreInitialPositionFunction = function(event){ initialPosition.set('yaw', oldYaw); initialPosition.set('pitch', oldPitch); initialPosition.set('hfov', oldHfov); itemDispatcher.unbind('end', restoreInitialPositionFunction, self); }; itemDispatcher.bind('end', restoreInitialPositionFunction, self); } panoramaSequence.set('movementIndex', panoramaSequenceIndex); } } playListDispatcher.set('selectedIndex', indexDispatcher); if(player){ player.unbind('stateChange', stateChangeFunction, self); for(var i = 0; i<buttons.length; ++i) { buttons[i].unbind('click', disposeCallback, self); } } if(sameViewerArea){ if(playList != playListDispatcher) playListDispatcher.unbind('change', changeFunction, self); } else{ viewerArea.set('visible', false); } playListDispatcher = undefined; }; var mediaDispatcherByParam = mediaDispatcher != undefined; if(!mediaDispatcher){ var currentIndex = playList.get('selectedIndex'); var currentPlayer = (currentIndex != -1) ? playList.get('items')[playList.get('selectedIndex')].get('player') : this.getActivePlayerWithViewer(this.MainViewer); if(currentPlayer) { var playerClass = currentPlayer.get('class'); if(playerClass == 'PanoramaPlayer') { mediaDispatcher = currentPlayer.get('panorama'); if(mediaDispatcher == undefined) medisDispatcher = currentPlayer.get('video'); } else if(playerClass == 'VideoPlayer' || playerClass == 'Video360Player') mediaDispatcher = currentPlayer.get('video'); else if(playerClass == 'PhotoAlbumPlayer') mediaDispatcher = currentPlayer.get('photoAlbum'); else if(playerClass == 'MapPlayer') mediaDispatcher = currentPlayer.get('map'); } } var playListDispatcher = mediaDispatcher ? this.getPlayListWithMedia(mediaDispatcher, true) : undefined; if(!playListDispatcher){ playList.set('selectedIndex', index); return; } var indexDispatcher = playListDispatcher.get('selectedIndex'); if(playList.get('selectedIndex') == index || indexDispatcher == -1){ return; } var item = playList.get('items')[index]; var itemDispatcher = playListDispatcher.get('items')[indexDispatcher]; var viewerArea = item.get('player').get('viewerArea'); var sameViewerArea = viewerArea == itemDispatcher.get('player').get('viewerArea'); if(sameViewerArea){ if(playList != playListDispatcher){ playListDispatcher.set('selectedIndex', -1); playListDispatcher.bind('change', changeFunction, this); } } else{ viewerArea.set('visible', true); } var panoramaSequenceIndex = -1; var panoramaSequence = undefined; var camera = itemDispatcher.get('camera'); if(camera){ panoramaSequence = camera.get('initialSequence'); if(panoramaSequence) { panoramaSequenceIndex = panoramaSequence.get('movementIndex'); } } playList.set('selectedIndex', index); var player = undefined; var buttons = []; if(item.get('player') != itemDispatcher.get('player') || !mediaDispatcherByParam){ player = item.get('player'); if(player.get('class') == 'PanoramaPlayer' && item.get('media').get('class') != 'Video360') { var addButtons = function(property){ var value = player.get(property); if(Array.isArray(value)) buttons = buttons.concat(value); else buttons.push(value); }; addButtons('buttonStop'); for(var i = 0; i<buttons.length; ++i) { buttons[i].bind('click', disposeCallback, this); } } else { setTimeout(function(){player.bind('stateChange', stateChangeFunction, self)}, 100); } } this.executeFunctionWhenChange(playList, index, disposeCallback); },
@@ -1175,7 +1175,7 @@ TDV.PlayerAPI.defineScript({ "definitions": [
   "setStartTimeVideoSync": function(media, player){  this.setStartTimeVideo(media, player.get('currentTime')); },
   "setStartTimeVideo": function(media, time){  var items = this.getPlayListItems(media); var startTimeBackup = []; var restoreStartTimeFunc = function() { for(var i = 0; i<items.length; ++i){ var item = items[i]; item.set('startTime', startTimeBackup[i]); item.unbind('stop', restoreStartTimeFunc, this); } }; for(var i = 0; i<items.length; ++i) { var item = items[i]; startTimeBackup.push(item.get('startTime')); item.set('startTime', time); item.bind('stop', restoreStartTimeFunc, this); } },
   "shareFacebook": function(url){  window.open('https://www.facebook.com/sharer/sharer.php?u=' + url, '_blank'); },
-  "openLink": function(url, name){  if(url == location.href) { return; } if (name == '_blank' && window && window.process && window.process.versions && window.process.versions['electron']){ if (url.startsWith('/')) { var r = window.location.href.split('/'); r.pop(); url = r.join('/') + url; } var extension = url.split('.').pop().toLowerCase(); if(extension != 'pdf' || url.startsWith('file://')) { var shell = require('electron').shell; shell.openExternal(url); } else { window.open(url, name); } } else { var newWindow = window.open(url, name); newWindow.focus(); } },
+  "getCurrentPlayers": function(){  var players = this.getByClassName('PanoramaPlayer'); players = players.concat(this.getByClassName('VideoPlayer')); players = players.concat(this.getByClassName('Video360Player')); players = players.concat(this.getByClassName('PhotoAlbumPlayer')); return players; },
   "isCardboardViewMode": function(){  var players = this.getByClassName('PanoramaPlayer'); return players.length > 0 && players[0].get('viewMode') == 'cardboard'; },
   "shareGoogle": function(url){  window.open('https://plus.google.com/share?url=' + url, '_blank'); },
   "getPlayListItems": function(media, player){  var itemClass = (function() { switch(media.get('class')) { case 'Panorama': case 'LivePanorama': case 'HDRPanorama': return 'PanoramaPlayListItem'; case 'Video360': return 'Video360PlayListItem'; case 'PhotoAlbum': return 'PhotoAlbumPlayListItem'; case 'Map': return 'MapPlayListItem'; case 'Video': return 'VideoPlayListItem'; } })(); if (itemClass != undefined) { var items = this.getByClassName(itemClass); for (var i = items.length-1; i>=0; --i) { var item = items[i]; if(item.get('media') != media || (player != undefined && item.get('player') != player)) { items.splice(i, 1); } } return items; } else { return []; } },
